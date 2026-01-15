@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/logo.png" />
+
+    <title>Miqueias Barros | System Online</title>
+    <meta
+      name="description"
+      content="Portfólio de Desenvolvedor Front-End focado em React, Performance e Segurança Web."
+    />
+    <meta
+      property="og:title"
+      content="Miqueias Barros | Front-End & Security"
+    />
+    <meta
+      property="og:description"
+      content="Interfaces imersivas e código de alta performance. Confira meus projetos."
+    />
+    <meta
+      property="og:image"
+      content="https://seusite.com/assets/images/preview.jpg"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="hidden-scroll">
+    <div id="preloader">
+      <div class="terminal-loader">
+        <div class="terminal-header">BIOS DATE 01/15/26 12:52:15 VER 1.0.2</div>
+        <div class="terminal-text" id="boot-text"></div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cursor-custom"></div>
+    <div id="cursor-trail"></div>
+    <div class="crt-overlay"></div>
+    <canvas id="matrix-bg"></canvas>
+
+    <audio
+      id="hover-sound"
+      src="https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-interface-click-901.mp3"
+    ></audio>
+    <audio
+      id="easter-egg-sound"
+      src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-retro-changing-tab-206.mp3"
+    ></audio>
+
+    <nav class="cyber-nav">
+      <a href="#home" class="logo-container" data-hover>
+        <img src="assets/images/logo.png" alt="MB Logo" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" data-hover>01. //Home</a></li>
+        <li><a href="#about" data-hover>02. //Sobre</a></li>
+        <li><a href="#projects" data-hover>03. //Projetos</a></li>
+        <li>
+          <a href="#contact" class="highlight-link" data-hover>04. //Contato</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-btn" data-hover>
+        <i class="ph ph-list"></i>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+      <div class="hero-content fade-in">
+        <span class="terminal-badge blink trigger-egg" data-hover
+          >> System.State: Online</span
+        >
+
+        <div class="glitch-wrapper">
+          <h1 class="glitch-title" data-text="MIQUEIAS BARROS">
+            MIQUEIAS BARROS
+          </h1>
+        </div>
+
+<h2 class="subtitle">
+  Front-End Developer <span class="dim">& Powered by Coffee</span>
+</h2>
+
+        <p class="hero-desc-terminal">
+          <span id="typed-text"></span><span class="cursor">_</span>
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="cyber-btn primary" data-hover
+            >Ver Projetos</a
+          >
+          <a href="#contact" class="cyber-btn" data-hover>Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="container">
+        <h3 class="section-title"><span>02.</span> /root/user_profile</h3>
+
+        <div class="about-grid">
+          <div class="profile-card glass-panel fade-in-left" data-tilt>
+            <div class="img-wrapper">
+              <img
+                src="assets/images/IMG_20251129_121926.jpg"
+                alt="Foto Miqueias"
+              />
+              <div class="scan-line"></div>
+            </div>
+
+            <div class="stats-widget">
+              <div class="stat-row">
+                <i class="ph-fill ph-coffee-bean" style="color: #c27c4e"></i>
+                <div class="stat-bar-container">
+                  <div class="stat-label">Caffeine Level</div>
+                  <div class="progress-bar">
+                    <div class="fill" style="width: 98%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="stat-row">
+                <i class="ph-fill ph-code"></i>
+                <div class="stat-bar-container">
+                  <div class="stat-label">Coding Activity</div>
+                  <div class="progress-bar">
+                    <div class="fill" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-content fade-in-right">
+<p class="big-bio">
+  Desenvolvedor Front-End especialista em dar vida a layouts complexos. 
+  Com um foco obsessivo em interatividade e <span class="neon-text">Interfaces Imersivas</span>, 
+  transformo conceitos visuais em experiências digitais dinâmicas. 
+  De Alagoas para o mundo, meu código une estética refinada e alta performance 
+  para criar aplicações que não apenas funcionam, mas cativam o usuário.
+</p>
+            <div
+              class="bio-contact"
+              style="
+                margin-bottom: 25px;
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.9rem;
+              "
+            >
+              <span style="color: #8f9f8f">> Contact_Link:</span>
+              <a
+                href="mailto:dev.miqueias7@gmail.com"
+                style="color: #00ff41; text-decoration: none; margin-left: 10px"
+                data-hover
+              >
+                dev.miqueias7@gmail.com
+              </a>
+            </div>
+
+            <div class="skills-wrapper">
+              <div class="skill-category">
+                <h4>> Front-End (Main)</h4>
+                <div class="tags-cloud">
+                  <span>React</span><span>Next.js</span><span>TypeScript</span
+                  ><span>Tailwind</span><span>JavaScript</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>> Expansion Slots (Interesses)</h4>
+                <div class="tags-cloud secondary">
+                  <span>Node.js</span><span>Web Security</span
+                  ><span>PM/Agile</span><span>DevOps Basics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <h3 class="section-title"><span>03.</span> /var/www/projects</h3>
+
+        <div class="timeline-container">
+  <article class="project-item glass-panel fade-up" data-tilt>
+    <div class="project-thumb">
+      <img src="assets/images/destinocoruripe.png" alt="Portal Destino Coruripe" loading="lazy" class="tech-img" />
+      <div class="scan-overlay"></div>
+    </div>
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-year">2025 // Live</div>
+        <div class="project-links">
+          <a href="https://destinocoruripe.com.br/" target="_blank" rel="noopener noreferrer" class="cyber-link" title="Avisar Site Online">
+            <i class="ph ph-globe"></i> Visit Site
+          </a>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Portal Destino Coruripe</h4>
+        <p>
+          Desenvolvimento Front-end freelancer para o Grupo Castro Agência. 
+          Portal turístico responsivo com sistema de reservas e guia local.
+        </p>
+        <ul class="tech-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>SEO</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-item glass-panel fade-up" data-tilt>
+    <div class="project-thumb">
+      <img src="assets/images/pong.png" alt="Ping Pong Game" loading="lazy" class="tech-img" />
+      <div class="scan-overlay"></div>
+    </div>
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-year">2024</div>
+        <div class="project-links">
+          <a href="https://github.com/MiqueiasFBarros/PING-PONG" target="_blank" rel="noopener noreferrer" class="cyber-link">
+            <i class="ph ph-github-logo"></i> Code
+          </a>
+          <a href="https://miqueiasfbarros.github.io/PING-PONG/" target="_blank" rel="noopener noreferrer" class="cyber-link highlight">
+            <i class="ph ph-play"></i> Play
+          </a>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Ping-Pong Arcade</h4>
+        <p>Recriação do clássico jogo Arcade com física de colisão e pontuação via Canvas API.</p>
+        <ul class="tech-list">
+          <li>HTML5 Canvas</li>
+          <li>JS Game Loop</li>
+          <li>CSS3</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-item glass-panel fade-up" data-tilt>
+    <div class="project-thumb">
+      <img src="https://raw.githubusercontent.com/MiqueiasFBarros/Golden_Dice/master/app/src/main/res/drawable/titulo.png" alt="Golden Dice App" loading="lazy" class="tech-img object-contain" style="background: #2b2b2b;" />
+    </div>
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-year">2024</div>
+        <div class="project-links">
+          <a href="https://github.com/MiqueiasFBarros/Golden_Dice" target="_blank" rel="noopener noreferrer" class="cyber-link">
+            <i class="ph ph-github-logo"></i> Repo
+          </a>
+          <a href="https://github.com/MiqueiasFBarros/Golden_Dice/releases" target="_blank" rel="noopener noreferrer" class="cyber-link">
+            <i class="ph ph-android-logo"></i> APK
+          </a>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>Golden Dice (Android)</h4>
+        <p>App auxiliar para RPG de mesa com rolagem de dados e histórico offline via SQLite.</p>
+        <ul class="tech-list">
+          <li>Java Android</li>
+          <li>SQLite</li>
+          <li>Android Studio</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article class="project-item glass-panel fade-up" data-tilt>
+    <div class="project-thumb">
+      <img src="https://raw.githubusercontent.com/MiqueiasFBarros/SimpEco_-PokeEco-/refs/heads/main/src/assetsREADME/logopoke.png" alt="PokeEco Sim" loading="lazy" class="tech-img object-contain" style="background: #0f380f;" />
+    </div>
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-year">2023</div>
+        <div class="project-links">
+          <a href="https://github.com/MiqueiasFBarros/SimpEco_-PokeEco-" target="_blank" rel="noopener noreferrer" class="cyber-link">
+            <i class="ph ph-github-logo"></i> Repo
+          </a>
+        </div>
+      </div>
+      <div class="project-details">
+        <h4>PokeEco: Ecosystem Sim</h4>
+        <p>Simulador de ecossistema autônomo aplicando conceitos complexos de POO em Java.</p>
+        <ul class="tech-list">
+          <li>Java POO</li>
+          <li>AI Logic</li>
+          <li>OpenJDK</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+</div>
+    <footer id="contact" class="section-pad">
+      <div class="container footer-layout">
+        <div class="footer-text fade-in">
+          <h3 class="section-title"><span>04.</span> /etc/contact</h3>
+          <h2>Iniciar Protocolo de Comunicação?</h2>
+          <p>Estou disponível para novos projetos.</p>
+        </div>
+
+        <div class="links-grid fade-up">
+          <a
+            href="mailto:dev.miqueias7@gmail.com"
+            class="link-card highlight"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-envelope-simple"></i>
+            <span>Email Me</span>
+            <small>Mandar mensagem direta</small>
+          </a>
+          <a
+            href="assets/seu-curriculo.pdf"
+            download
+            class="link-card highlight"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-file-pdf"></i>
+            <span>Download Currículo</span>
+            <small>Versão PDF (2026)</small>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/miqueias-barros-2b1488174/"
+            class="link-card"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-linkedin-logo"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/MiqueiasFBarros"
+            class="link-card"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-github-logo"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://instagram.com/miqueiasfbarros"
+            target="_blank"
+            class="link-card"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-instagram-logo"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://wa.me/5582993925483?text=Ol%C3%A1!%20Analisei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20agendar%20uma%20breve%20conversa."
+            class="link-card"
+            data-tilt
+            data-hover
+          >
+            <i class="ph ph-whatsapp-logo"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p>System.out.println("Made by Miqueias F Barros © 2026");</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="twitch-easter-egg" class="twitch-hidden">
+      <div class="twitch-bubble">
+        Voce me achou! Cola lá na live:
+        <a
+          href="https://www.twitch.tv/morpheus_dev"
+          target="_blank"
+          style="
+            display: block;
+            font-weight: bold;
+            color: #1d6601;
+            font-size: 1.1rem;
+            text-decoration: none;
+          "
+          data-hover
+        >
+          twitch.tv/morpheus_dev
+        </a>
+      </div>
+      <div class="twitch-char-wrapper" data-hover>
+        <img
+          src="assets/images/twitch-smile.png"
+          alt="Sorrindo"
+          class="char-img char-smile"
+        />
+        <img
+          src="assets/images/twitch-serious.png"
+          alt="Sério"
+          class="char-img char-serious"
+        />
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
