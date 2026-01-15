@@ -212,39 +212,65 @@ if (menuBtn) {
   });
 }
 
-// 8. TWITCH EASTER EGG (2 CLIQUES)
+// 8. TWITCH EASTER EGG (2 CLIQUES OU TOQUES)
 const eggTrigger = document.querySelector(".trigger-egg");
 const eggContainer = document.getElementById("twitch-easter-egg");
 const eggSound = document.getElementById("easter-egg-sound");
+
 let clickCount = 0;
 let clickTimer;
-if (eggTrigger) {
-  eggTrigger.addEventListener("click", () => {
-    clickCount++;
-    eggTrigger.style.color = "#fff";
-    setTimeout(() => {
-      eggTrigger.style.color = "";
-    }, 100);
-    clearTimeout(clickTimer);
-    clickTimer = setTimeout(() => {
-      clickCount = 0;
-    }, 1000);
-    if (clickCount === 2) {
-      activateEasterEgg();
-      clickCount = 0;
-    }
-  });
+
+function handleInteraction(e) {
+  if (e.type === "touchend") e.preventDefault();
+
+  clickCount++;
+
+  eggTrigger.style.color = "#fff";
+  eggTrigger.style.textShadow = "0 0 10px #fff";
+
+  setTimeout(() => {
+    eggTrigger.style.color = "";
+    eggTrigger.style.textShadow = "";
+  }, 150);
+
+  clearTimeout(clickTimer);
+
+  clickTimer = setTimeout(() => {
+    clickCount = 0;
+  }, 500);
+
+  if (clickCount === 2) {
+    activateEasterEgg();
+    clickCount = 0;
+  }
 }
+
+if (eggTrigger) {
+  eggTrigger.addEventListener("click", handleInteraction);
+  eggTrigger.addEventListener("touchend", handleInteraction);
+}
+
 function activateEasterEgg() {
   if (eggContainer.classList.contains("twitch-active")) return;
-  eggContainer.classList.remove("twitch-hidden");
-  eggContainer.classList.add("twitch-active");
+
+  eggContainer.style.display = "flex";
+
+  requestAnimationFrame(() => {
+    eggContainer.classList.remove("twitch-hidden");
+    eggContainer.classList.add("twitch-active");
+  });
+
   if (eggSound) {
     eggSound.volume = 0.4;
     eggSound.play().catch(() => {});
   }
+
   setTimeout(() => {
     eggContainer.classList.remove("twitch-active");
     eggContainer.classList.add("twitch-hidden");
-  }, 10000);
+
+    setTimeout(() => {
+      eggContainer.style.display = "";
+    }, 600);
+  }, 6000);
 }
