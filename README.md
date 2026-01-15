@@ -1,6 +1,6 @@
 #  System Online | Miqueias Barros Portfolio
 
-![Project Banner](assets/images/logo.jpg)
+![Project Banner](https://raw.githubusercontent.com/MiqueiasFBarros/personal-portfolio/refs/heads/main/assets/images/logo.png)
 
 > **Status:** System Online   
 > **Theme:** Cyberpunk / Terminal / Neon
@@ -61,4 +61,5 @@ O portfólio apresenta meus principais trabalhos, incluindo:
    ```bash
    git clone [https://github.com/MiqueiasFBarros/Portfolio-System.git](https://github.com/MiqueiasFBarros/Portfolio-System.git)
    ```
+
 
