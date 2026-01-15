@@ -1,11 +1,11 @@
-# 💻 System Online | Miqueias Barros Portfolio
+#  System Online | Miqueias Barros Portfolio
 
 ![Project Banner](assets/images/logo.jpg)
 
-> **Status:** System Online 🟢  
+> **Status:** System Online   
 > **Theme:** Cyberpunk / Terminal / Neon
 
-## 📜 Sobre
+##  Sobre
 
 Bem-vindo ao meu hub digital. Este portfólio não é apenas uma vitrine de projetos, mas uma demonstração de habilidades em **Front-End**, **UI Design** e **Interatividade**.
 
@@ -15,17 +15,17 @@ Inspirado na estética Cyberpunk e em interfaces de terminais retrô, o site bus
 
 ---
 
-## 🚀 Funcionalidades & Efeitos Visuais
+##  Funcionalidades & Efeitos Visuais
 
 Este projeto foi desenvolvido "Vanilla" (sem frameworks pesados) para garantir máximo controle sobre as animações e performance.
 
-- **📺 CRT & Scanline Overlay:** Simulação de monitores de tubo antigos usando CSS puro.
-- **🧩 Matrix Rain:** Efeito clássico de chuva de código renderizado em HTML5 Canvas.
-- **⌨️ Terminal Loader:** Tela de "BIOS Boot" simulada com JavaScript na inicialização.
-- **🖱️ Custom Cursor:** Cursor personalizado com rastro (trail) e efeitos de hover.
-- **🔊 Sound FX:** Feedback sonoro ao interagir com botões e links (Sound Design).
-- **🥚 Easter Eggs:** Interações escondidas (ex: Personagem da Twitch no rodapé).
-- **📱 Responsividade:** Layout adaptável para Mobile, Tablet e Desktop.
+- ** CRT & Scanline Overlay:** Simulação de monitores de tubo antigos usando CSS puro.
+- ** Matrix Rain:** Efeito clássico de chuva de código renderizado em HTML5 Canvas.
+- ** Terminal Loader:** Tela de "BIOS Boot" simulada com JavaScript na inicialização.
+- ** Custom Cursor:** Cursor personalizado com rastro (trail) e efeitos de hover.
+- ** Sound FX:** Feedback sonoro ao interagir com botões e links (Sound Design).
+- ** Easter Eggs:** Interações escondidas (ex: Personagem da Twitch no rodapé).
+- ** Responsividade:** Layout adaptável para Mobile, Tablet e Desktop.
 
 ---
 
@@ -42,7 +42,7 @@ Este projeto foi desenvolvido "Vanilla" (sem frameworks pesados) para garantir m
 
 ---
 
-## 📂 Projetos em Destaque
+## Projetos em Destaque
 
 O portfólio apresenta meus principais trabalhos, incluindo:
 
@@ -55,9 +55,10 @@ O portfólio apresenta meus principais trabalhos, incluindo:
 
 ---
 
-## 🔧 Como Executar Localmente
+##  Como Executar Localmente
 
 1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/MiqueiasFBarros/Portfolio-System.git](https://github.com/MiqueiasFBarros/Portfolio-System.git)
    ```
+
