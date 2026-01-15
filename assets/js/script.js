@@ -1,4 +1,4 @@
-// --- 1. BOOT PRELOADER ---
+//  1. BOOT PRELOADER
 const bootText = [
   "> Initializing Kernel...",
   "> Loading Interface Modules...",
@@ -50,7 +50,7 @@ function runBootSequence() {
 }
 window.addEventListener("load", runBootSequence);
 
-// --- 2. MATRIX RAIN (COM JAPONÊS) ---
+//  2. MATRIX RAIN
 const canvas = document.getElementById("matrix-bg");
 const ctx = canvas.getContext("2d");
 function resizeCanvas() {
@@ -103,7 +103,7 @@ function drawMatrix() {
 }
 setInterval(drawMatrix, 75);
 
-// --- 3. CUSTOM CURSOR (LERP) ---
+//  3. CUSTOM CURSOR
 const cursor = document.getElementById("cursor-custom");
 const trail = document.getElementById("cursor-trail");
 const hoverSound = document.getElementById("hover-sound");
@@ -139,7 +139,7 @@ document
     });
   });
 
-// --- 4. TYPEWRITER ---
+//  4. TYPEWRITER
 function startTypewriter() {
   const text =
     "Arquitetando soluções digitais seguras e interfaces de alta performance.";
@@ -156,7 +156,7 @@ function startTypewriter() {
   type();
 }
 
-// --- 5. SCROLL OBSERVER ---
+//  5. SCROLL OBSERVER
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -169,7 +169,7 @@ document
   .querySelectorAll(".fade-in, .fade-up, .fade-in-left, .fade-in-right")
   .forEach((el) => observer.observe(el));
 
-// --- 6. 3D TILT ---
+//  6. 3D TILT
 document.addEventListener("mousemove", (e) => {
   document.querySelectorAll("[data-tilt]").forEach((card) => {
     const rect = card.getBoundingClientRect();
@@ -187,7 +187,7 @@ document.addEventListener("mousemove", (e) => {
   });
 });
 
-// --- 7. MOBILE MENU ---
+//  7. MOBILE MENU
 const menuBtn = document.querySelector(".mobile-menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
@@ -212,7 +212,7 @@ if (menuBtn) {
   });
 }
 
-// --- 8. TWITCH EASTER EGG (5 CLIQUES) ---
+// 8. TWITCH EASTER EGG (2 CLIQUES)
 const eggTrigger = document.querySelector(".trigger-egg");
 const eggContainer = document.getElementById("twitch-easter-egg");
 const eggSound = document.getElementById("easter-egg-sound");

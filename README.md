@@ -1,6 +1,6 @@
 # 💻 System Online | Miqueias Barros Portfolio
 
-![Project Banner](assets/images/preview.jpg)
+![Project Banner](assets/images/logo.jpg)
 
 > **Status:** System Online 🟢  
 > **Theme:** Cyberpunk / Terminal / Neon
