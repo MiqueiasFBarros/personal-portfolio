@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -9,18 +9,6 @@
     <meta
       name="description"
       content="Portfólio de Desenvolvedor Front-End focado em React, Performance e Segurança Web."
-    />
-    <meta
-      property="og:title"
-      content="Miqueias Barros | Front-End & Security"
-    />
-    <meta
-      property="og:description"
-      content="Interfaces imersivas e código de alta performance. Confira meus projetos."
-    />
-    <meta
-      property="og:image"
-      content="https://seusite.com/assets/images/preview.jpg"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -69,241 +57,156 @@
         </li>
       </ul>
 
-      <div class="mobile-menu-btn" data-hover>
-        <i class="ph ph-list"></i>
+      <div style="display: flex; gap: 15px; align-items: center">
+        <!-- Botão Tema Claro/Escuro -->
+        <button
+          id="theme-toggle"
+          class="cyber-link"
+          style="border: none; padding: 5px 10px; cursor: pointer"
+          aria-label="Alternar Tema"
+          data-hover
+        >
+          <i
+            class="ph ph-sun"
+            id="theme-icon"
+            style="font-size: 1.2rem; color: var(--neon-green)"
+          ></i>
+        </button>
+
+        <div class="mobile-menu-btn" data-hover aria-label="Abrir Menu">
+          <i class="ph ph-list"></i>
+        </div>
       </div>
     </nav>
 
-    <section id="home" class="hero-section">
-      <div class="hero-content fade-in">
-        <span class="terminal-badge blink trigger-egg" data-hover
-          >> System.State: Online</span
-        >
-
-        <div class="glitch-wrapper">
-          <h1 class="glitch-title" data-text="MIQUEIAS BARROS">
-            MIQUEIAS BARROS
-          </h1>
-        </div>
-
-<h2 class="subtitle">
-  Front-End Developer <span class="dim">& Powered by Coffee</span>
-</h2>
-
-        <p class="hero-desc-terminal">
-          <span id="typed-text"></span><span class="cursor">_</span>
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="cyber-btn primary" data-hover
-            >Ver Projetos</a
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content fade-in">
+          <span class="terminal-badge blink trigger-egg" data-hover
+            >> System.State: Online</span
           >
-          <a href="#contact" class="cyber-btn" data-hover>Entrar em contato</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section-pad">
-      <div class="container">
-        <h3 class="section-title"><span>02.</span> /root/user_profile</h3>
-
-        <div class="about-grid">
-          <div class="profile-card glass-panel fade-in-left" data-tilt>
-            <div class="img-wrapper">
-              <img
-                src="assets/images/IMG_20251129_121926.jpg"
-                alt="Foto Miqueias"
-              />
-              <div class="scan-line"></div>
-            </div>
-
-            <div class="stats-widget">
-              <div class="stat-row">
-                <i class="ph-fill ph-coffee-bean" style="color: #c27c4e"></i>
-                <div class="stat-bar-container">
-                  <div class="stat-label">Caffeine Level</div>
-                  <div class="progress-bar">
-                    <div class="fill" style="width: 98%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <i class="ph-fill ph-code"></i>
-                <div class="stat-bar-container">
-                  <div class="stat-label">Coding Activity</div>
-                  <div class="progress-bar">
-                    <div class="fill" style="width: 85%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="glitch-wrapper">
+            <h1 class="glitch-title" data-text="MIQUEIAS BARROS">
+              MIQUEIAS BARROS
+            </h1>
           </div>
-
-          <div class="bio-content fade-in-right">
-<p class="big-bio">
-  Desenvolvedor Front-End especialista em dar vida a layouts complexos. 
-  Com um foco obsessivo em interatividade e <span class="neon-text">Interfaces Imersivas</span>, 
-  transformo conceitos visuais em experiências digitais dinâmicas. 
-  De Alagoas para o mundo, meu código une estética refinada e alta performance 
-  para criar aplicações que não apenas funcionam, mas cativam o usuário.
-</p>
-            <div
-              class="bio-contact"
-              style="
-                margin-bottom: 25px;
-                font-family: 'JetBrains Mono', monospace;
-                font-size: 0.9rem;
-              "
+          <h2 class="subtitle">
+            Front-End Developer <span class="dim">& Powered by Coffee</span>
+          </h2>
+          <p class="hero-desc-terminal">
+            <span id="typed-text"></span><span class="cursor">_</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="cyber-btn primary" data-hover
+              >Ver Projetos</a
             >
-              <span style="color: #8f9f8f">> Contact_Link:</span>
-              <a
-                href="mailto:dev.miqueias7@gmail.com"
-                style="color: #00ff41; text-decoration: none; margin-left: 10px"
-                data-hover
-              >
-                dev.miqueias7@gmail.com
-              </a>
-            </div>
+            <a href="#contact" class="cyber-btn" data-hover
+              >Entrar em contato</a
+            >
+          </div>
+        </div>
+      </section>
 
-            <div class="skills-wrapper">
-              <div class="skill-category">
-                <h4>> Front-End (Main)</h4>
-                <div class="tags-cloud">
-                  <span>React</span><span>Next.js</span><span>TypeScript</span
-                  ><span>Tailwind</span><span>JavaScript</span>
+      <section id="about" class="section-pad">
+        <div class="container">
+          <h3 class="section-title"><span>02.</span> /root/user_profile</h3>
+
+          <div class="about-grid">
+            <div class="profile-card glass-panel fade-in-left" data-tilt>
+              <div class="img-wrapper">
+                <img
+                  src="assets\images\1791444919326.jpg"
+                  alt="Foto Miqueias"
+                />
+                <div class="scan-line"></div>
+              </div>
+              <div class="stats-widget">
+                <div class="stat-row">
+                  <i class="ph-fill ph-coffee-bean" style="color: #c27c4e"></i>
+                  <div class="stat-bar-container">
+                    <div class="stat-label">Caffeine Level</div>
+                    <div class="progress-bar">
+                      <div class="fill" style="width: 98%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <i class="ph-fill ph-code"></i>
+                  <div class="stat-bar-container">
+                    <div class="stat-label">Coding Activity</div>
+                    <div class="progress-bar">
+                      <div class="fill" style="width: 85%"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="skill-category">
-                <h4>> Expansion Slots (Interesses)</h4>
-                <div class="tags-cloud secondary">
-                  <span>Node.js</span><span>Web Security</span
-                  ><span>PM/Agile</span><span>DevOps Basics</span>
+            </div>
+
+            <div class="bio-content fade-in-right">
+              <p class="big-bio">
+                Desenvolvedor Front-End especialista em dar vida a layouts
+                complexos. Com um foco obsessivo em interatividade e
+                <span class="neon-text">Interfaces Imersivas</span>, transformo
+                conceitos visuais em experiências digitais dinâmicas. De Alagoas
+                para o mundo, meu código une estética refinada e alta
+                performance para criar aplicações que não apenas funcionam, mas
+                cativam o usuário.
+              </p>
+              <div
+                class="bio-contact"
+                style="
+                  margin-bottom: 25px;
+                  font-family: &quot;JetBrains Mono&quot;, monospace;
+                  font-size: 0.9rem;
+                "
+              >
+                <span style="color: #8f9f8f">> Contact_Link:</span>
+                <a
+                  href="mailto:dev.miqueias7@gmail.com"
+                  style="
+                    color: var(--neon-green);
+                    text-decoration: none;
+                    margin-left: 10px;
+                  "
+                  data-hover
+                >
+                  dev.miqueias7@gmail.com
+                </a>
+              </div>
+              <div class="skills-wrapper">
+                <div class="skill-category">
+                  <h4>> Front-End (Main)</h4>
+                  <div class="tags-cloud">
+                    <span>React</span><span>Next.js</span><span>TypeScript</span
+                    ><span>Tailwind</span><span>JavaScript</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h4>> Expansion Slots (Interesses)</h4>
+                  <div class="tags-cloud secondary">
+                    <!-- Bancos de dados detalhados -->
+                    <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span
+                    ><span>Firebase / NoSQL</span><span>Node.js</span
+                    ><span>Web Security</span><span>PM/Agile</span
+                    ><span>DevOps Basics</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="section-pad">
-      <div class="container">
-        <h3 class="section-title"><span>03.</span> /var/www/projects</h3>
+      <section id="projects" class="section-pad">
+        <div class="container">
+          <h3 class="section-title"><span>03.</span> /var/www/projects</h3>
 
-        <div class="timeline-container">
-  <article class="project-item glass-panel fade-up" data-tilt>
-    <div class="project-thumb">
-      <img src="assets/images/destinocoruripe.png" alt="Portal Destino Coruripe" loading="lazy" class="tech-img" />
-      <div class="scan-overlay"></div>
-    </div>
-    <div class="project-content">
-      <div class="project-header">
-        <div class="project-year">2025 // Live</div>
-        <div class="project-links">
-          <a href="https://destinocoruripe.com.br/" target="_blank" rel="noopener noreferrer" class="cyber-link" title="Avisar Site Online">
-            <i class="ph ph-globe"></i> Visit Site
-          </a>
+          <!-- O JS VAI INJETAR OS PROJETOS AQUI -->
+          <div class="timeline-container" id="projects-container"></div>
         </div>
-      </div>
-      <div class="project-details">
-        <h4>Portal Destino Coruripe</h4>
-        <p>
-          Desenvolvimento Front-end freelancer para o Grupo Castro Agência. 
-          Portal turístico responsivo com sistema de reservas e guia local.
-        </p>
-        <ul class="tech-list">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>SEO</li>
-        </ul>
-      </div>
-    </div>
-  </article>
+      </section>
+    </main>
 
-  <article class="project-item glass-panel fade-up" data-tilt>
-    <div class="project-thumb">
-      <img src="assets/images/pong.png" alt="Ping Pong Game" loading="lazy" class="tech-img" />
-      <div class="scan-overlay"></div>
-    </div>
-    <div class="project-content">
-      <div class="project-header">
-        <div class="project-year">2024</div>
-        <div class="project-links">
-          <a href="https://github.com/MiqueiasFBarros/PING-PONG" target="_blank" rel="noopener noreferrer" class="cyber-link">
-            <i class="ph ph-github-logo"></i> Code
-          </a>
-          <a href="https://miqueiasfbarros.github.io/PING-PONG/" target="_blank" rel="noopener noreferrer" class="cyber-link highlight">
-            <i class="ph ph-play"></i> Play
-          </a>
-        </div>
-      </div>
-      <div class="project-details">
-        <h4>Ping-Pong Arcade</h4>
-        <p>Recriação do clássico jogo Arcade com física de colisão e pontuação via Canvas API.</p>
-        <ul class="tech-list">
-          <li>HTML5 Canvas</li>
-          <li>JS Game Loop</li>
-          <li>CSS3</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-
-  <article class="project-item glass-panel fade-up" data-tilt>
-    <div class="project-thumb">
-      <img src="https://raw.githubusercontent.com/MiqueiasFBarros/Golden_Dice/master/app/src/main/res/drawable/titulo.png" alt="Golden Dice App" loading="lazy" class="tech-img object-contain" style="background: #2b2b2b;" />
-    </div>
-    <div class="project-content">
-      <div class="project-header">
-        <div class="project-year">2024</div>
-        <div class="project-links">
-          <a href="https://github.com/MiqueiasFBarros/Golden_Dice" target="_blank" rel="noopener noreferrer" class="cyber-link">
-            <i class="ph ph-github-logo"></i> Repo
-          </a>
-          <a href="https://github.com/MiqueiasFBarros/Golden_Dice/releases" target="_blank" rel="noopener noreferrer" class="cyber-link">
-            <i class="ph ph-android-logo"></i> APK
-          </a>
-        </div>
-      </div>
-      <div class="project-details">
-        <h4>Golden Dice (Android)</h4>
-        <p>App auxiliar para RPG de mesa com rolagem de dados e histórico offline via SQLite.</p>
-        <ul class="tech-list">
-          <li>Java Android</li>
-          <li>SQLite</li>
-          <li>Android Studio</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-
-  <article class="project-item glass-panel fade-up" data-tilt>
-    <div class="project-thumb">
-      <img src="https://raw.githubusercontent.com/MiqueiasFBarros/SimpEco_-PokeEco-/refs/heads/main/src/assetsREADME/logopoke.png" alt="PokeEco Sim" loading="lazy" class="tech-img object-contain" style="background: #0f380f;" />
-    </div>
-    <div class="project-content">
-      <div class="project-header">
-        <div class="project-year">2023</div>
-        <div class="project-links">
-          <a href="https://github.com/MiqueiasFBarros/SimpEco_-PokeEco-" target="_blank" rel="noopener noreferrer" class="cyber-link">
-            <i class="ph ph-github-logo"></i> Repo
-          </a>
-        </div>
-      </div>
-      <div class="project-details">
-        <h4>PokeEco: Ecosystem Sim</h4>
-        <p>Simulador de ecossistema autônomo aplicando conceitos complexos de POO em Java.</p>
-        <ul class="tech-list">
-          <li>Java POO</li>
-          <li>AI Logic</li>
-          <li>OpenJDK</li>
-        </ul>
-      </div>
-    </div>
-  </article>
-
-</div>
     <footer id="contact" class="section-pad">
       <div class="container footer-layout">
         <div class="footer-text fade-in">
@@ -383,7 +286,7 @@
       <div class="twitch-bubble">
         Voce me achou! Cola lá na live:
         <a
-          href="https://www.twitch.tv/morpheus_dev"
+          href="https://www.twitch.tv/olaranja_"
           target="_blank"
           style="
             display: block;
@@ -394,23 +297,25 @@
           "
           data-hover
         >
-          twitch.tv/morpheus_dev
+          twitch.tv/olaranja_
         </a>
       </div>
       <div class="twitch-char-wrapper" data-hover>
         <img
-          src="assets/images/twitch-smile.png"
-          alt="Sorrindo"
+          src="assets\images\twitch-serious.png"
+          alt="Pip Sorrindo"
           class="char-img char-smile"
         />
         <img
-          src="assets/images/twitch-serious.png"
-          alt="Sério"
+          src="assets\images\twitch-smile.png"
+          alt="Pip Tuning"
           class="char-img char-serious"
         />
       </div>
     </div>
 
+    <!-- ORDEM IMPORTANTE DOS SCRIPTS -->
+    <script src="assets/js/projects.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
